@@ -1,0 +1,131 @@
+body {
+  background-color: #141414;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.card-img-top {
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  /* box-shadow: 0 10px 50px rgba(235, 25, 110, 1); give the image a box shadow */
+}
+
+.student-profile-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+.student-list {
+  list-style: none;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+.student-card strong {
+  font-size: 20px;
+  text-align: center;
+}
+.student-card p {
+  font-size: 15px;
+  text-align: center;
+}
+/* .card-img-container {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px; 
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+} */
+.student-card {
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  color: #444;
+  width: 90%;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+}
+/* .student-card {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample74.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-radius: 8px;
+  padding: 120px 20px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  color: #444;
+  width: 100%;
+  max-width: 300px;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
+  position: relative;
+  overflow: hidden;
+} */
+.student-card:hover {
+  cursor: pointer;
+  box-shadow: 4px 5px 8px rgba(247, 244, 244, 0.1);
+  transform: translateY(-5px);
+  transition: transform 0.2s;
+} 
+.social-links img {
+  width: 20px;
+  height: 20px;
+}
+.social-icons {
+  margin-top: 10px;
+}
+.social-icons a {
+  color: #444;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.text-btn {
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #161623;
+  text-align: center;
+  padding: 10px;
+  color: #161623;
+}
+.text-btn:hover {
+  color: #fff;
+  background-color: #161623;
+  border: none;
+}
+
+
+@media (max-width: 900px) {
+  body {
+    margin: 0;
+    padding-right: 70px;
+  }
+  .student-profile-card {
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-items: center; */
+  }
+}
+@media (max-width: 600px) {
+  .student-profile-card {
+    grid-template-columns: 1fr;
+    /* justify-items: center; */
+  }
+}
+
