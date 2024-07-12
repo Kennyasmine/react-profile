@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <div className="container">
-        <h2>IOTB Web Development Students</h2>
+        <h2>IOTB Web Development Students!</h2>
         <div className="container-card">
           <ul className="student-profile-card">
             {students.map(student => (
